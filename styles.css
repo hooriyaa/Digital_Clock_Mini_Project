@@ -22,6 +22,7 @@ body,
 .Rightside {
   flex-direction: column;
 }
+/* Made it Circle */
 .digitalClock {
   position: relative;
   background-color: #000;
