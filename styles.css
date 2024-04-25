@@ -1,59 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins",sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
-body{
-    min-height: 100vh;
-    background-color: #fcfaf1;
+body {
+  min-height: 100vh;
+  background-color: #fcfaf1;
 }
-body,.time,.leftside,.Rightside, .date,.day{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body,
+.time,
+.leftside,
+.Rightside,
+.date,
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.Rightside{
- flex-direction: column;
+.Rightside {
+  flex-direction: column;
 }
-.digitalClock{
-    background-color: #000;
-    color: #fafafa;
-    padding: 20px 40px;
-    width: 425px;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 10px grey;
+.digitalClock {
+  position: relative;
+  background-color: #000;
+  color: #fafafa;
+  padding: 20px 40px;
+  width: 425px;
+  height: 425px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 10px grey;
 }
-#hours{
-    font-size: 6rem;
-    font-weight: 600;
+
+#hours {
+  font-size: 6rem;
+  font-weight: 600;
 }
-#dots{
-    font-size: 3rem;
-    font-weight: 800;
-    margin-left: 16px;
-    margin-right: 20px;
+#dots {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-left: 16px;
+  margin-right: 20px;
 }
-#Minutes{
-    font-size: 4rem;
-    font-weight: 600;
+#Minutes {
+  font-size: 4rem;
+  font-weight: 600;
 }
-#seconds{
-font-size: 1.6rem;;
-font-weight: 600;
-;
+#seconds {
+  font-size: 1.6rem;
+  font-weight: 600;
 }
-#ampm{
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: yellow
+#ampm {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: yellow;
 }
-.Rightbuttom{
-margin-left: 62px;
-transform: translateY(-15px);
+.Rightbuttom {
+  margin-left: 62px;
+  transform: translateY(-15px);
 }
-#dd,#ddmmyy{
-    font-size: 1.9rem;
-    font-weight: 400;
+#dd,
+#ddmmyy {
+  font-size: 1.9rem;
+  font-weight: 400;
 }
+/* hr minute secs hands */
+.bar {
+    position: absolute;
+    top: 50%;
+    right: 0; /* Align to the right side */
+    transform: translateY(-50%); /* Center vertically */
+    transform-origin: 100% 50%; /* Change transform origin to start from the right edge */
+    background-color: #fafafa;
+  }
+  
+  .hour-bar {
+    width: 30%;
+    height: 6px;
+  }
+  
+  .minute-bar {
+    width: 40%;
+    height: 6px;
+  }
+  
+  .second-bar {
+    width: 50%;
+    height: 4px;
+    transform-origin: 100% 50%; /* Adjust transform origin for second bar */
+  }
+  
