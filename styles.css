@@ -67,27 +67,26 @@ body,
 }
 /* hr minute secs hands */
 .bar {
-    position: absolute;
-    top: 50%;
-    right: 0; /* Align to the right side */
-    transform: translateY(-50%); /* Center vertically */
-    transform-origin: 100% 50%; /* Change transform origin to start from the right edge */
-    background-color: #fafafa;
-  }
-  
-  .hour-bar {
-    width: 30%;
-    height: 6px;
-  }
-  
-  .minute-bar {
-    width: 40%;
-    height: 6px;
-  }
-  
-  .second-bar {
-    width: 50%;
-    height: 4px;
-    transform-origin: 100% 50%; /* Adjust transform origin for second bar */
-  }
-  
+  position: absolute;
+  top: 50%;
+  right: 0; /* Align to the right side */
+  transform: translateY(-50%); /* Center vertically */
+  transform-origin: 100% 50%; /* Change transform origin to start from the right edge */
+  background-color: #fafafa;
+}
+
+.hour-bar {
+  width: 30%;
+  height: 6px;
+}
+
+.minute-bar {
+  width: 40%;
+  height: 6px;
+}
+
+.second-bar {
+  width: 50%;
+  height: 4px;
+  transform-origin: 100% 50%; /* Adjust transform origin for second bar */
+}
